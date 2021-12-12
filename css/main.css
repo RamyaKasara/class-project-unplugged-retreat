@@ -92,7 +92,7 @@ textarea {
  header{
    display: flex;
    flex-flow: column nowrap;
-   justify-content: flex-start;
+   justify-content: center;
    align-items: center;
    width:100%;
  }
@@ -162,12 +162,38 @@ aside{
   text-align: center;
 }
 
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+.faq{
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
 
+/* ==========================================================================
+   About Page
+   ========================================================================== */
 
-
-
-
+.mission{
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.contact-content{
+  text-align: center;
+}
 
 
 
