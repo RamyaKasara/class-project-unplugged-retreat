@@ -87,113 +87,307 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* { 
+  margin: 0; 
+  padding: 0; 
+} 
+
+html, body{ 
+  height: fit-content; 
+  margin:0;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: stretch;
+} 
+
+
 
 /***** Header area *****/
- header{
-   display: flex;
-   flex-flow: column nowrap;
-   justify-content: center;
-   align-items: center;
-   width:100%;
- }
 
- header .content-wrapper{
-   display:flex;
-   flex-flow: column nowrap;
- }
-
- header nav{
-   display:flex;
-   flex-flow: row nowrap;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
- }
-
- header nav ul{
-   display: flex;
-   flex-flow:row nowrap;
-   justify-content: space-between;
-   width: 100%;
- }
- 
-/***** Main area *****/
-.hero-area{
+header{
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}
-
-aside{
-  display: flex;
-  flex-direction: column nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  /*width: 100%;*/
+  /*width:60%;*/
+  margin: 0;
+  padding: 2%;
+  /*padding-left: 20%;*/
+  background-color: #202322;
+  background-repeat: no-repeat;
+
+  
+  
+  /*
+  width: 100%;
+  max-width: 100%; 
+  
+  position: relative;*/
+
+  
 }
 
-.features{
-  display: flex;
-  flex-flow: column nowrap;
+
+header .content-wrapper{
+  display:flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  width: 100%;
 }
 
-.reviews{
-  display: flex;
+header .header-divider{
+  width: 100%;
+  border-top: #3a3a3a solid 1px;
+  align-self: center;
+}
+
+header nav{
+  display:flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  width: 50%;
+  margin: 2%;
+  margin-left:25%;
+  /*width: 100;*/
+}
+
+header nav ul{
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type:none;
+}
+
+
+header a{
+  text-decoration: none;
+  color: #ffffff
+}
+
+/***** Main area *****/
+
+.hero-area{
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ justify-content: center;
+ 
+ color:#ffffff;
+ background-size: cover;
+ width: 100%; 
+ margin-right: 0; 
+
+}
+
+.hero-area .content-wrapper{
+  width: 100%;
+  background-image: url('../img/person.png');
+  background-position: center bottom;
+  height: 800px;
+  min-width: 100%; 
+ position: relative;
+  
+}
+
+.hero-area h1{
+  margin: 3%;
+}
+
+aside{
+ display: flex;
+ flex-direction: column nowrap;
+ justify-content: center;
+ align-items: center;
+ background-color: #527158;
+ width: 100%;
+ color:#ffffff;
+}
+
+aside .content-wrapper{
+  margin: 2%;
+}
+
+input{
+  width: 100%;
+}
+
+.features{
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+ background-image: url('../img/background.png');
+ background-position: center;
+ background-size: cover;
+ color:#ffffff;
+}
+
+.features .content-wrapper{
+  margin: 2%;
+  margin-bottom: 30%;
+}
+
+
+.features-items{
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.features article{
+  width: 50%;
+  text-align: center;
+}
+
+.icon{
+  margin-top: 28%;
+}
+
+.description{
+  margin-top: 28%;
+}
+
+.reviews{
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: center;
+ align-items: center;
+ color: #ffffff;
+ background-color: #2a423a;
+ padding: 2%;
+}
+
+.reviews h3{
+  width: 50%;
+}
+
+.reviews div{
+  margin: 1%;
 }
 
 /***** Footer Area *****/
-.footer-content{
+footer{
+  background-color: #1c2824;
+  height: fit-content;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10%;
 }
 
-.contact{
+footer .content-wrapper{
+  width: 88%;
+  padding: 5%;
+}
+
+.footer-content{
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ color: #ffffff;
+ height: 200px;
+}
+
+footer .social{
+  margin-top: 8%;
+  width: 60%;
   text-align: center;
+}
+
+footer .social-icons{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 8%;
+}
+
+
+.contact{
+ text-align: center;
 }
 
 .copyright{
-  text-align: center;
+ text-align: center;
+ color: #ffffff;
 }
 
 /* ==========================================================================
-   FAQ Page
-   ========================================================================== */
+  FAQ Page
+  ========================================================================== */
 
 .faq{
-  display:flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+ display:flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+ color: #ffffff;
+ background-color: #527158;
+
 }
 
+.faq .content-wrapper{
+  margin: 3%;
+}
+
+.faq-content{
+  margin-bottom: 5%;
+}
+
+.question{
+ margin: 5% 0;
+}
 
 /* ==========================================================================
-   About Page
-   ========================================================================== */
+  About Page
+  ========================================================================== */
 
 .mission{
-  display:flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+ display:flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+ background-color: #527158;
+ color:#ffffff;
+}
+
+.mission .content-wrapper{
+  margin: 3%;
 }
 .contact-section{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+ background-color: #527158;
+ color:#ffffff;
 }
+
+.contact-section .content-wrapper{
+  margin: 3%;
+}
+
 .contact-content{
-  text-align: center;
+ text-align: center;
+ margin-top: 5%;
 }
+
+.contact-content p{
+  margin-bottom: 5%;
+}
+
 
 
 
