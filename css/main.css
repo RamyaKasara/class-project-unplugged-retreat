@@ -257,7 +257,7 @@ input{
 
 .reviews{
  display: flex;
- flex-flow: row nowrap;
+ flex-flow: column nowrap;
  justify-content: center;
  align-items: center;
  color: #ffffff;
@@ -390,25 +390,6 @@ footer .social-icons{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -497,8 +478,141 @@ footer .social-icons{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+
+  /* Header */
+ 
+  
+  header .content-wrapper{
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 3%;
+    width: 100%;
+  }
+  
+  header .header-divider{
+    width: 35%;
+    border-top: none;
+    display: flex;
+  }
+ 
+  header nav{
+    width: 100%;
+  }
+
+  
+  header nav ul{
+    width: 60%;
+  }
+
+ /* Hero Area */
+  
+    /* Aside */
+
+   
+     
+     .hero-area h1{
+       margin: 3%;
+     }
+   
+     
+    aside .content-wrapper{
+       margin: 2% 4%;
+       margin-left: 2%;
+       width: 100%;
+       display: flex;
+       flex-flow: row nowrap;
+       justify-content: space-between;
+       align-items: center;
+     }
+     
+     input{
+       width: 90%;
+     }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form{
+    width: 40%;
+  }
+
+  /* Features */
+
+   
+   .features .content-wrapper{
+     margin-bottom: 30%;
+     padding: 0 15%;
+   }
+   
+   
+   .features-items{
+    flex-flow: row wrap;
+    justify-content: space-between;
+   }
+   
+   .features article{
+     width: 40%;
+   }
+
+  /* Reviews */
+.reviews{
+  flex-flow:column nowrap;
+}
+
+.reviews h2{
+  align-self: flex-start;
+}
+
+
+.reviews .content-wrapper{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content:center;
+}
+
+  .reviews article {
+    width: 40%;
+  }
+
+  /* Footer */
+  
+
+  .footer-content {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .social{
+    width: 50%;
+  }
+
+  footer .social-icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+ 
+
+}
+
+@media only screen and (min-width: 1200px){
+  /*Desktop styles here*/
 }
 
 @media print,
