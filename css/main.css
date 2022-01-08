@@ -87,10 +87,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
 * { 
   margin: 0; 
   padding: 0; 
 } 
+
+html{
+  font-size: 16px;
+}
 
 html, body{ 
   height: fit-content; 
@@ -102,7 +107,44 @@ html, body{
   align-items: stretch;
 } 
 
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
 
+h1, h2, h3, h4{
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  font-size:2.25em ; /* 36px*/
+}
+
+h2{
+  font-size: 1.875em; /*30px*/
+}
+
+h3, h4{
+  font-size: 1.125em; /*18px*/
+}
+
+a{
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type:none;
+}
+
+p{
+  font-size: 0.875em; /*14px*/
+  line-height: 1.125em;
+}
+
+address{
+  font-style: normal;
+}
 
 /***** Header area *****/
 
@@ -118,16 +160,11 @@ header{
   /*padding-left: 20%;*/
   background-color: #202322;
   background-repeat: no-repeat;
-
-  
-  
   /*
   width: 100%;
   max-width: 100%; 
   
   position: relative;*/
-
-  
 }
 
 
@@ -162,14 +199,10 @@ header nav ul{
   flex-flow:row nowrap;
   justify-content: space-between;
   width: 100%;
-  list-style-type:none;
 }
 
 
-header a{
-  text-decoration: none;
-  color: #ffffff
-}
+
 
 /***** Main area *****/
 
