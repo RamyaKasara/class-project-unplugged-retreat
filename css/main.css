@@ -146,6 +146,14 @@ address{
   font-style: normal;
 }
 
+img { 
+	width: 100%;
+}
+ 
+figure {
+  margin: 0;
+}
+
 /***** Header area *****/
 
 header{
@@ -174,7 +182,15 @@ header .content-wrapper{
   justify-content: center;
   align-items: center;
   margin: 0;
+  width:100%;
+}
+
+header figure{
   width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header .header-divider{
@@ -225,6 +241,7 @@ header nav ul{
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #333;
   height: 800px;
   min-width: 100%; 
  position: relative;
@@ -284,7 +301,7 @@ input[type=button] {
 
 .features .content-wrapper{
   margin: 2%;
-  margin-bottom: 30%;
+  margin-bottom: 10%;
 }
 
 
@@ -298,11 +315,21 @@ input[type=button] {
 .features article{
   width: 50%;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
 }
 
-.icon{
-  margin-top: 28%;
+.features figure{
+  display: flex;
+  flex-flow: row wrap;
+  width: 30%;
+  justify-content: center;
+  align-content: center;
 }
+
 
 .description{
   margin-top: 28%;
@@ -324,6 +351,14 @@ input[type=button] {
 
 .reviews div{
   margin: 1%;
+}
+
+.reviews figure{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /***** Footer Area *****/
