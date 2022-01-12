@@ -911,6 +911,21 @@ footer .social-icons{
       align-items: flex-start;
     }*/
 
+    .map figure{
+      height: 0;
+      width:100%;
+      position: relative;
+      overflow: hidden;
+      padding-top: 75%;
+    }
+
+    .map iframe{
+      width: 360px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     /* ==========================================================================
      FAQ Page
      ========================================================================== */
