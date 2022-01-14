@@ -880,6 +880,10 @@ footer .social-icons{
     margin-top: 8%;
   }
 
+  footer .social-icons p i {
+    font-size: 1.3125em;
+  }
+
   footer .copyright {
     width: 100%;
   }
