@@ -819,6 +819,11 @@ footer .social-icons{
     .features article{
       width: 30%;
     }
+
+    .features i {
+      font-size: 3.75em;
+      margin-bottom: 40px;
+    }
  
      /* Reviews */
 .reviews{
